@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "549646461567",
+    "project_id": "appifyapps-51b91",
+    "storage_bucket": "appifyapps-51b91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549646461567:android:5cc1ac17dec7f94bc46d4a",
+        "android_client_info": {
+          "package_name": "com.app.begavalley"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549646461567-qfrn840un4ish32p33n7gnpcps3h9r94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUpLADFGU5ao3CdFu20DA8NIS4wat1ifI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549646461567-qfrn840un4ish32p33n7gnpcps3h9r94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

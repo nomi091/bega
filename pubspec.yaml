@@ -34,27 +34,16 @@ dependencies:
   url_launcher: ^6.1.8
   store_redirect: ^2.0.1
 
-  # #Firebase
-  # firebase_in_app_messaging: ^0.7.0+10
-  # firebase_messaging: ^14.2.1
-  # firebase_core: ^2.4.1
-
-  # PUSH NOTIFICATION
-  # onesignal_flutter: ^3.5.0
-
-  # ADS
-  # google_mobile_ads: ^2.3.0
-  # facebook_audience_network: ^1.0.1
 
   # WEB TOOLS
   flutter_inappwebview: ^5.7.2+3
 
   # qr_code_scanner: ^1.0.1
 
-  flutter_localizations:
-    sdk: flutter
+  # flutter_localizations:
+  #   sdk: flutter
   change_app_package_name: ^1.1.0
-  google_mobile_ads: ^3.0.0
+  # google_mobile_ads: ^3.0.0
 
 dev_dependencies:
   flutter_test:

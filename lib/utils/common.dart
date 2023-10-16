@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
+// import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../main.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -126,13 +126,13 @@ Widget itemWidget(BuildContext context, {required Function onTap, int code = 0, 
 void loadInterstitialAds() {
   getStringAsync(ADD_TYPE) != NONE
       
-          ? createInterstitialAd()
+          ?  SizedBox()
           : SizedBox();
 }
 
 void showInterstitialAds() {
   getStringAsync(ADD_TYPE) != NONE?
-         adShow():SizedBox();
+        SizedBox():SizedBox();
          
       //: SizedBox();
 }
@@ -143,18 +143,7 @@ Widget showBannerAds() {
       ? getStringAsync(ADD_TYPE) == isGoogleAds
           ? Container(
               height:  60,
-              child: AdWidget(
-                ad: BannerAd(
-                  adUnitId: kReleaseMode
-                      ? getBannerAdUnitId()!
-                      : Platform.isIOS
-                          ? getStringAsync(AD_MOB_BANNER_ID_IOS)
-                          : getStringAsync(AD_MOB_BANNER_ID),
-                  size: AdSize.banner,
-                  request: AdRequest(),
-                  listener: BannerAdListener(),
-                )..load(),
-              ),
+              child: Container()
             ):Container()
      
       : SizedBox();

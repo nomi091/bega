@@ -42,7 +42,7 @@ Future<model.MainResponse> fetchData() async {
   final response;
   if (PURCHASE_CODE.isEmpty) {
     log("BASE_URL" + BASE_URL);
-    response = await http.Client().get(Uri.parse(BASE_URL + '/upload/allAppsJSON/AppID_1007_AppName.json'));
+    response = await http.Client().get(Uri.parse(BASE_URL + '/upload/allAppsJSON/AppID_1053_AppName.json'));
   } else {
     response = await http.Client().get(Uri.parse(BASE_URL_OFFLINE));
   }

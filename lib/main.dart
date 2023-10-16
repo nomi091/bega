@@ -2,12 +2,9 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../AppTheme.dart';
 import '../Store/AppStore.dart';
-import '../app_localizations.dart';
 import '../model/LanguageModel.dart';
 import '../screen/DataScreen.dart';
 import '../utils/common.dart';
@@ -26,7 +23,7 @@ void main() async {
   appStore.setLanguage(getStringAsync(APP_LANGUAGE, defaultValue: 'en'));
 
   if (isMobile) {
-    MobileAds.instance.initialize();
+    // MobileAds.instance.initialize();
     //await OneSignal.shared.setAppId(getStringAsync(ONESINGLE, defaultValue: mOneSignalID));
     // OneSignal.shared.consentGranted(true);
     // OneSignal.shared.promptUserForPushNotificationPermission();
@@ -74,7 +71,6 @@ class _MyAppState extends State<MyApp> {
         home: appStore.isNetworkAvailable ? DataScreen() : NoInternetConnection(),
         supportedLocales: Language.languagesLocale(),
         navigatorKey: navigatorKey,
-        localizationsDelegates: [AppLocalizations.delegate, GlobalMaterialLocalizations.delegate, GlobalWidgetsLocalizations.delegate],
         localeResolutionCallback: (locale, supportedLocales) => locale,
         locale: Locale(getStringAsync(APP_LANGUAGE, defaultValue: 'en')),
         theme: AppTheme.lightTheme,
